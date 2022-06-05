@@ -1,0 +1,147 @@
+body
+{
+    padding: 0;
+    margin: 0;  
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.parent-nav
+{
+    background-color: #1e202b;
+}
+
+
+.navbar ul li 
+{
+    margin-right: 30px;
+    list-style: none;
+
+}
+.navbar ul li a 
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.navbar ul li a:hover
+{
+    color: #009adb;
+    border: 1px solid #009adb;
+} 
+
+
+.parent-caption
+{
+    min-height: 400px;
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+button
+{
+    right: 0;
+    bottom: 1%;
+    padding: 10px 40px !important;
+    background-color: #009adb  ;
+    color: #fff;
+    border: none;
+}
+input
+{
+    background-color: #1e202b;
+    border: none;
+    color: #fff;
+    padding-left: 20px !important;
+}
+
+
+footer
+{
+    background-color: #262936;
+}
+
+.icons i 
+{
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #009adb;
+    transition: .5s all;
+    cursor: pointer;
+
+}
+
+
+.icons i:hover
+{
+    background-color: #009adb;
+    color: #fff;
+}
+
+.weather-caption
+{
+    background-color: #262936;
+    height: 500px;
+}
+
+.weather-caption h1
+{
+    font-size: 6.4285714286rem;
+    font-weight: bolder;
+    margin-right: 40px;
+}
+
+.weather-caption sup
+
+{
+    position: relative;
+    top: -.5em;
+    vertical-align: baseline;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.weather-caption h5
+{
+    color:#009adb !important;
+}
+.weather-date
+{
+    background-color:#1e202b;
+}
+
+
+
+
+
+@media screen and (max-width:766px)
+{
+    .input-group , .icons
+    {
+        width: 100% !important;
+
+    }
+
+    .icons
+    {
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .copy-rigt
+    {
+        text-align: center;
+    }
+
+    .logo-img img
+    {
+        width: 100% !important;
+    }
+
+}
