@@ -3,6 +3,7 @@ let findCountry = document.getElementById('findCountry')
 let displayWeather = document.getElementById("displayWeather")
 let finalResult ="";
 
+
 let week = ['Sunday' , 'Monday' , 'Tuesday' , 'Wednesday' , 'Thursday' , 'Friday' , 'Saturday'  ]
 let month=['January' , 'February' , 'March' , 'April' , 'May' , 'June' , 'July' , 'August' , 'September' , 'October', 'November' , 'December' ]
 let dateWeather = new Date();
@@ -16,16 +17,6 @@ async function getWeather(country)
 
 
 
-
-// async function getWeather()
-// {
-//     let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c394f4d4a2de43abb3f95643220306&q=cairo&aqi=yes&days=3`)
-//     finalResult = await response.json();
-//     // console.log(finalResult.current);
-//     // console.log(finalResult.location.name);
-//     console.log(finalResult.forecast.forecastday[1].date);
-// }
-// getWeather()
 
 findCountry.addEventListener('click' , function()
 {
@@ -118,7 +109,9 @@ function display()
 
 
 
-// console.log( week[dateWeather.getDay()]);
-// console.log( month[dateWeather.getMonth()]);
-// console.log(dateWeather.getDate());
-
+function getYear()
+{
+  document.getElementById('year').innerHTML=dateWeather.getFullYear();
+  
+}
+getYear();
